@@ -1,0 +1,303 @@
+body{
+    box-sizing: border-box;
+    margin: 0;
+    scroll-behavior: smooth;
+    font-family: 'Poppins', sans-serif;
+}
+
+.logo{
+    width: 38px;
+    height: 38px;
+    margin-top: -6px;
+    border-radius: 50%;
+}
+
+h2{
+    margin-top: -5px;
+    font-size: 22px;
+}
+.NavContainer{
+    display: flex;
+    justify-content: space-between;
+    position:fixed;
+    top: 0;
+    width: 100%;
+    height: 45px;
+    color: white;
+    padding: 5px;
+    background-color: black;
+}
+.LogoContainer{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+   padding: 10px;
+}
+.NavLinks,li, .k{
+    display: flex;
+   justify-content: space-between;
+    padding: 7px;
+    margin-top: -5px;
+    text-decoration: none;
+    list-style: none;
+    color: white;
+    transition: all cubic-bezier(0.175, 0.885, 0.32, 1.275);
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.k:hover{
+    color: orangered;
+    scale: 1.08;
+}
+.dropdown_menu{
+    display: none;
+    position: absolute;
+    right: 0rem;
+    top: 25px;
+    height: 0;
+    width: 180px;
+    background-color: black;
+    backdrop-filter: blur(15px);
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+}
+.dropdown_menu.open{
+    height: 204px;
+}
+.dropdown_menu li{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.MenueToggle{
+    display: none;
+    cursor: pointer;
+}
+/***************banner styling************/
+
+.banner{
+    width: 100%;
+    height: 400px;
+    margin-top: -2%;
+}
+/***************about us styling************/
+p{
+    text-align: center;
+}
+h3{
+    
+    text-align:center;
+}
+section{
+    margin-top: 5%;
+}
+
+
+/***************services styling************/
+
+.OurServices{
+  margin: 0 auto;
+  box-sizing: border-box;
+  box-sizing: border-box;
+    width: 90%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 3fr);
+    gap: 40px;
+  
+}
+.serviceP{
+    display: none;
+}
+.serviceimg{
+    border-top-right-radius:15px ;
+    border-top-left-radius:15px ;
+    margin: auto;
+    width: 100%;
+}
+#drop{
+  font-size: 9px;
+  cursor: pointer;
+   
+}
+button{
+    color: white;
+    background-color: rgba(5, 238, 44, 0.705);
+    border: none;
+    padding: 9px 4px;
+    font-size: 14px;
+    width: 48%;
+    box-shadow: black 1px;
+    margin-bottom: 8px;
+    border-radius: 8px;
+}
+
+.servicP{
+    margin: 7px;
+    text-align: start;
+    display: none;
+    font-size: 12px;
+}
+.ServiceContainer{
+   margin-top: 50%;
+    text-align: center;
+    margin:auto;
+    background: whitesmoke;
+    box-shadow: black 4px 4px 4px;
+    width: 60%;
+    border-radius: 18px;
+
+}
+
+.hire_sec{
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 40px;
+    margin: 4%;
+    justify-content: space-around;
+}
+
+.hire_us_container{
+    box-sizing: border-box;
+    width: 30%;
+    padding: 3.5px;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: black 3px 3px 3px; 
+  }
+
+.hire_img{
+    margin: 0 auto;
+    height: 170px;
+    width:170px;
+    border-radius: 100%;
+}
+
+.icon_sec{
+    font-size: 25px;
+}
+/***************footer styling************/
+
+footer{
+    background: black;
+    color: rgb(236, 226, 226);
+    font-size: 13px;
+    width: 100%;
+    height:30px ;
+    margin-top: 2.5%;
+    bottom: 0;
+   
+}
+.foot{
+    text-align: center;
+    bottom: 0;
+}
+
+
+
+
+
+@media (max-width: 1290px){
+
+    .logo{
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+    }
+    h2{
+        font-size: 15px;
+    }
+    .dropdown_menu{
+        display: block;
+        font-size: 12px;
+    }
+    .MenueToggle{
+        display: block;
+        padding: 10px;
+    }
+    .NavLinks{
+        display: none;
+    }
+
+    .banner{
+        width: 100%;
+        height: 200px;
+        margin-top: -3%;
+    }
+    /***************about us styling************/
+    p{
+        font-size: 13px;
+        text-align: center;
+        margin: 10px;
+    }
+    footer{
+        font-size: 4px;
+        height: 25px;
+    }
+    
+/****************services***********/
+.OurServices{
+    box-sizing: border-box;
+    width: 90%;
+    padding: 10px;
+    display: grid;
+    grid-template-columns: repeat(1, 3fr);
+    gap: 20px;
+    
+    
+  }
+  
+  button{
+    padding: 7px 3px;
+    font-size: 11px;
+    width: 40%;
+    
+  }
+
+  .servicP{
+    font-size: 11px;
+  }
+  .ServiceContainer{
+    text-align: center;
+    margin:auto;
+    background: whitesmoke;
+    box-shadow: black 3px 3px 3px;
+    width: 75%;
+    border-radius: 16px;
+  }
+  h4{
+    font-size: 12px;
+  }
+  h3{
+    font-size: 14px;
+     text-align: center;
+  }
+  .hire_us_container{
+    width: 80%;
+    padding: 3.5px;
+    border-radius: 8px;
+    
+
+    
+  }
+.hire_img{
+    margin: 0 auto;
+    height: 100px;
+    width:100px;
+    border-radius: 100%;
+}
+
+.icon_sec{
+    font-size: 18px;
+}
+.bar_graph{
+    font-size: 5px;
+}
+}
+
